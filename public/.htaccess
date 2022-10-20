@@ -1,0 +1,18 @@
+
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php80-script .php
+suPHP_ConfigPath /home/digitalscudero1/
+##### LOCAWEB - NAO REMOVER #####
+
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /pix/
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
+</IfModule>

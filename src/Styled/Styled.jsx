@@ -7,13 +7,15 @@ export const AppContainer = styled(Div100vh)`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   &::after,
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: #ff00ff21;
+    background-color: #ff00ff20;
+    background-color: #ff00ff00;
     z-index: 1000;
   }
   &::after{
